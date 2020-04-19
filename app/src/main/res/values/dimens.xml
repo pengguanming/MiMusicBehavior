@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="face_trans_y">-12dp</dimen>
+    <dimen name="content_trans_y">280dp</dimen>
+    <dimen name="content_trans_down_end_y">360dp</dimen>
+    <dimen name="top_bar_height">56dp</dimen>
+</resources>
