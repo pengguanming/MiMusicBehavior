@@ -149,6 +149,10 @@ public class ContentBehavior extends CoordinatorLayout.Behavior<View> {
                                   @NonNull View target, int dx, int dy, @NonNull int[] consumed, int type) {
         float transY = child.getTranslationY() - dy;
 
+        if (type == ViewCompat.TYPE_NON_TOUCH && !flingFromCollaps && dy <= 0) {
+            return;
+        }
+        
         //处理上滑
         if (dy > 0) {
             if (transY >= topBarHeight) {
